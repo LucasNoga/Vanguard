@@ -4,7 +4,7 @@
 # [Author] : Lucas Noga
 # [Title] : Password Handler
 # [Description] : Password manager to get your password in your clipboard
-# [Version] : 1.0
+# [Version] : 1.0.1
 # [Usage] : pass <key_password>"
 # ------------------------------------------------------------------
 

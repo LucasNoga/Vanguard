@@ -1,7 +1,7 @@
 # Password handler
 
 Shell script to handle easily your password
-### Version 1.0
+### Version 1.0.1
 ## Configuration
 - Make sure to have `xclip` package installed
 ```bash
@@ -38,5 +38,7 @@ $ pass id1
 then I will get in my clipboard password1
 
 ### WIP
+1.0 Init project
+1.0.1 Fix bugs and add functions
 1.1 Store password in file
 1.2 List all password with pass all
