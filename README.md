@@ -3,16 +3,16 @@
 Shell script to handle easily your password
 ### Version 1.0
 ## Configuration
-- Make sure to have `xclip` package installed 
-```bash 
+- Make sure to have `xclip` package installed
+```bash
 $ sudo apt-get install xclip
-``` 
-- In your .bashrc or bash.profile write this 
-```bash 
+```
+- In your .bashrc or bash.profile write this
+```bash
 alias pass='~/.password
-``` 
+```
 - Then copy this file into your home directory with name .password like this:
-```bash 
+```bash
 $ cp password_handler ~/.password
 ```
 
@@ -27,16 +27,16 @@ declare -A passwords=(
 )
 ```sh
 
-- to get a password in your clip board just type 
-```bash 
+- to get a password in your clip board just type
+```bash
 $ pass <ID>
-``` 
+```
 Where <ID> is one your id declared in the hashmap in my case I can type:
-```bash 
+```bash
 $ pass id1
-``` 
+```
 then I will get in my clipboard password1
 
-### WIP 
-1.1 Store password in file 
+### WIP
+1.1 Store password in file
 1.2 List all password with pass all
