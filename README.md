@@ -1,23 +1,18 @@
-# Password handler
-
+# Vanguard
 Shell script to handle easily your password
 ### Version 1.0.2
 ## Configuration
+- Clone the repository
+```bash
+$ git clone https://github.com/LucasNoga/Vanguard.git
+```
 - Make sure to have `xclip` package installed
 ```bash
 $ sudo apt-get install xclip
 ```
-- In your .bashrc or bash.profile write this
-```bash
-alias pass='~/.password
-```
-- Then copy this file into your home directory with name .password like this:
-```bash
-$ cp password_handler ~/.password
-```
 
 ## How to use it
-- Once the configuration is done you can edit the file .password to add your passwords in a hashmap here:
+- Once the configuration is done you can edit the file .vanguard to add your passwords in a hashmap here:
 ```sh
 # HASHMAP for password list
 declare -A passwords=(
@@ -29,13 +24,13 @@ declare -A passwords=(
 
 - to get a password in your clip board just type
 ```bash
-$ pass <ID>
+$ ./vanguard.sh <ID>
 ```
 Where <ID> is one your id declared in the hashmap in my case I can type:
 ```bash
-$ pass id1
+$ ./vanguard.sh id1
 ```
-then I will get in my clipboard password1
+then you will get in your clipboard the password of id1 which is password1
 
 ### WIP
 1.0: Init project

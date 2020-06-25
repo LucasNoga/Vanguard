@@ -45,13 +45,6 @@ main(){
 fi
 }
 
-# HASHMAP for password list
-declare -A passwords=(
-    ["id1"]=$'password1'
-    ["id2"]=$'password2'
-    ["id3"]=$'password3'
-)
-
 get_all_passwords(){
     for key in "${!passwords[@]}"
     do
@@ -98,6 +91,16 @@ is_windows_os(){
   echo -ne $1 | clip.exe 2> /dev/null;
   echo $?
 }
+
+#
+#       HERE YOU CAN STORE YOUR PASSWORDS
+#
+# HASHMAP for password list
+declare -A passwords=(
+    ["id1"]=$'password1'
+    ["id2"]=$'password2'
+    ["id3"]=$'password3'
+)
 
 # Launch main program with all arguments
 main $@
